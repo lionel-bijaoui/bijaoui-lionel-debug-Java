@@ -6,7 +6,7 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
         AnalyticsCounter counter = new AnalyticsCounter(
-                new ReadSymptomDataFromFile("symptoms.txt"),
+                new ReadSymptomDataFromFile("Project02Eclipse/symptoms.txt"),
                 new WriteSymptomDataToFile("result.out")
         );
 
