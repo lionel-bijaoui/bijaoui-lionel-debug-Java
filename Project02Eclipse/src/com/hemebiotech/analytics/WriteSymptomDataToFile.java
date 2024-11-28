@@ -3,8 +3,8 @@ package com.hemebiotech.analytics;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map;
-import java.util.logging.Logger;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Implementation of the ISymptomWriter interface that writes symptoms and their occurrences to a file
@@ -29,7 +29,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
         try {
             FileWriter writer = new FileWriter(filepath);
             for (Map.Entry<String, Integer> entry : symptoms.entrySet()) {
-                writer.write(entry.getKey() + " : " + entry.getValue() + "\n");
+                writer.write(entry.getKey() + ": " + entry.getValue() + "\n");
             }
             writer.close();
         } catch (IOException e) {
