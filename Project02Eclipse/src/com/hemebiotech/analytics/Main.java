@@ -3,6 +3,9 @@ package com.hemebiotech.analytics;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Main class
+ */
 public class Main {
     public static void main(String[] args) {
         AnalyticsCounter counter = new AnalyticsCounter(

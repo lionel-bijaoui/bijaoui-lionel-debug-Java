@@ -23,7 +23,7 @@ public class AnalyticsCounter {
      * @return List of symptoms
      */
     public List<String> getSymptoms() {
-        return reader.getSymptoms();
+        return this.reader.getSymptoms();
     }
 
     /**
@@ -60,7 +60,7 @@ public class AnalyticsCounter {
      * @param symptoms Map of symptoms and their occurrences
      */
     public void writeSymptoms(Map<String, Integer> symptoms) {
-        writer.writeSymptoms(symptoms);
+        this.writer.writeSymptoms(symptoms);
     }
 
 }
